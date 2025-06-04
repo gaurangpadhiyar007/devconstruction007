@@ -2,19 +2,23 @@
 ---
 
 // Colors
-$primary: #e5261f;
-$primary-dark: #a01b16;
-$secondary: #f88379;
-$black: #2f2f41;
+
+
+$primary: #05b70e;
+$primary-dark: #036f09;
+$secondary: #aff49c;
+$black: #2f3241;
 $white: #ffffff;
-$white-offset: #fff6f8;
-$steel: #5c5a5a;
+$white-offset: #cdf9d2;
+$steel: #5a5c5a;
+$header: #d0ffd2;
+
 
 // Links
 $link-color: $primary;
 $link-decoration: none;
 $link-hover-color: lighten($primary, 10%);
-$link-hover-decoration: underline;
+$link-hover-decoration: none;
 
 // Fonts
 $font-family-base: Helvetica, Arial, sans-serif, -apple-system;

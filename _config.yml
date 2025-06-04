@@ -1,6 +1,6 @@
 baseurl: '/'
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'Prokreeti'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
@@ -14,7 +14,7 @@ home:
   limit_services: 6
 
 collections:
-  services:
+  stories:
     output: true
     sort_by: weight
   team:
@@ -23,9 +23,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "services"
+      type: "stories"
     values:
-      layout: "service"
+      layout: "story"
   - scope:
       path: ""
       type: "team"
