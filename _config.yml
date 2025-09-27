@@ -1,51 +1,17 @@
-baseurl: '/'
-permalink: pretty
-title: 'Jekyll Serif'
+title: <p align="center"> Adnan </p>
+logo: /assets/img/logo.png
 
-logo:
-  mobile: "images/logo/logo-mobile.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
+description: >
+  <p align="center">
+  <a href="pdf/resume.pdf">Resume</a> |
+  <a href="https://www.linkedin.com/in/adnan-profile/">LinkedIn</a> |
+  <a href="https://github.com/adnan">GitHub</a>
+  <br>
+  I'm working on Data Science, Big Data, Spark, Machine Learning & NLP related problems.
+  Currently handling real-time Big Data pipelines in production.
+  Previously worked with IBM Research on scalable data analytics.
+  I have 3+ years of experience in the AdTech domain.
+  <br>
+  </p>
 
-home: 
-  limit_services: 6
-
-collections:
-  services:
-    output: true
-    sort_by: weight
-  team:
-    output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
-
-sass:
-  style: compressed # possible values: nested expanded compact compressed
-
-plugins:
-  - jekyll-environment-variables
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - LICENSE.md
-  - LICENSE
-  - README.md
+theme: jekyll-theme-minimal
