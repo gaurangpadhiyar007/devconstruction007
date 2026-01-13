@@ -10,4 +10,6 @@ show_call_box: true
 
 # Gaurang Padhiyar.
 
-Adobe Commerce expertise for serious eCommerce growth.
+Custom Adobe Commerce development
+Performance-driven, secure, and stable solutions
+Designed for complex and growing eCommerce needs
