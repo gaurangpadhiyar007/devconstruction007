@@ -1,13 +1,13 @@
 ---
-title: Dev Construction
+title: Gaurang Padhiyar - Adobe Commerce Expert
 layout: home
-description: Dev Construction.
+description: Gaurang Padhiyar.
 intro_image: "images/illustrations/pointing.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
-# Dev Construction - a pioneer name in construction business.
+# Gaurang Padhiyar.
 
-Smart development. Solid construction.
+Adobe Commerce expertise for serious eCommerce growth.
