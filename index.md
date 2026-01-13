@@ -10,6 +10,9 @@ show_call_box: true
 
 # Gaurang Padhiyar.
 
-Custom Adobe Commerce development
-Performance-driven, secure, and stable solutions
-Designed for complex and growing eCommerce needs
+<ul>
+  <li>Freelance Adobe Commerce developer.</li>
+  <li>Building scalable, high-performance eCommerce solutions.</li>
+  <li>Focused on speed, security, and clean architecture.</li>
+  <li>Helping businesses grow with confidence.</li>
+</ul>
