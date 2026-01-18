@@ -9,4 +9,5 @@ intro_image_hide_on_mobile: false
 
 # Meet The Team
 
-Our team of qualified accountants and financial consultants can help your business at any stage of it's growth.
+Transform your e-commerce presence with custom Magento solutions, robust PHP development, and AI-driven services designed to optimize your operations and accelerate growth.
+
