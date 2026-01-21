@@ -8,5 +8,11 @@
       "name": "Email",
       "link": "mailto:gaurangpadhiyar1993@gmail.com",
       "image": "images/social/email.svg"
+  },
+  ,
+  {
+      "name": "",
+      "link": "",
+      "image": "images/social/no-image.svg"
   }
 ]
