@@ -9,4 +9,4 @@ intro_image_hide_on_mobile: true
 
 # Services that grow with your business
 
-Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.
+In the world of e-commerce, your technology should never be the bottleneck to your ambition. Our modular approach ensures that as your SKU count grows and your traffic scales, your infrastructure remains lean, fast, and adaptable.
