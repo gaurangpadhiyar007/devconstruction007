@@ -10,7 +10,7 @@ show_call_box: true
 
 # Gaurang Padhiyar.
 
-<ul>
+<ul class="listing-home-intro">
   <li>Freelance Adobe Commerce developer.</li>
   <li>Building scalable, high-performance eCommerce solutions.</li>
   <li>Focused on speed, security, and clean architecture.</li>
