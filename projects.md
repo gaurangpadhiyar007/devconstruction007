@@ -13,36 +13,31 @@ Over the years, I have helped brands across the globe—from the Australian outb
 
 ## Enterprise Magento & Adobe Commerce
 
-### Dinga
+### [Dinga](https://www.dinga.com.au/)
 **Hunting & Outdoor Gear** Full-scale Magento 2 development and technical orchestration. I managed the ongoing evolution of this complex catalog to ensure stability during high-traffic seasons.
 * **Focus:** Core Development, Backend Management.
-* [View Project](https://www.dinga.com.au/)
 
-### Jarvis Walker
+### [Jarvis Walker](https://www.jarviswalker.com.au/)
 **Australian Fishing Tackle** A heritage brand requiring custom Magento enhancements and deep performance tuning. I focused on building bespoke features that catered to a niche sporting audience.
 * **Focus:** Performance Optimization, Custom Features.
-* [View Project](https://www.jarviswalker.com.au/)
 
-### Deadwood Knives
+### [Deadwood Knives](https://www.deadwoodknives.com/)
 **Collector’s Knife Storefront** Lead developer for a critical Magento migration. I integrated **ChannelAdvisor** to sync complex inventory across multiple marketplaces seamlessly.
 * **Focus:** Migration, Marketplace Integration, Inventory Sync.
-* [View Project](https://www.deadwoodknives.com/)
-
-
 
 ---
 
 ## Specialized E-commerce Solutions
 
-### Loopify
+### [Loopify](https://loopify.world/)
 **Subscription Travel Marketplace** A unique project involving a subscription-based model. I handled the platform build, recurring payment integrations, and specialized admin training.
 * **Focus:** Subscription Logic, Payment Gateways.
 
-### Sougha Rewards
+### [Sougha Rewards](https://sougha.com/)
 **Loyalty & Gamification** Custom module development for a high-traffic loyalty rewards platform. This involved intricate API integrations to sync rewards across various user touchpoints.
 * **Focus:** API Orchestration, Custom Modules.
 
-### Piercing Mania
+### [Piercing Mania](https://piercingmania.com/)
 **Body Jewelry E-shop** Focused on the "findability" of products through custom search extension development and advanced inventory synchronization.
 * **Focus:** Search UX, Extension Development.
 
@@ -50,14 +45,12 @@ Over the years, I have helped brands across the globe—from the Australian outb
 
 ## Home, Decor & Luxury Furniture
 
-### 2XL Home & OC Home Furniture
+### [2XL Home](https://2xlhome.com/) & [OC Home Furniture](https://www.ochomefurniture.com/)
 **Furniture & Interior Retailers** Managed large-scale catalogs with a focus on UI/UX enhancements. I implemented advanced filtering systems and checkout optimizations to handle high-value transactions.
 * **Focus:** UI/UX, Catalog Management, Checkout Flow.
-* [View 2XL Home](https://2xlhome.com/) | [View OC Home](https://www.ochomefurniture.com/)
 
 
-
-### Grandiose & Bootbox
+### [Grandiose Supermarket](https://www.grandiose.ae/) & [Bootbox](https://bootbox.de/)
 **Bespoke Furnishings** From full-stack development to bespoke theme design, these projects required a balance between high-end aesthetics and technical performance.
 * **Focus:** Theme Engineering, Mobile Responsiveness.
 
@@ -69,7 +62,7 @@ Over the years, I have helped brands across the globe—from the Australian outb
 
 ## Performance & UX Tuning
 
-### Ondergoed
+### [Ondergoed](https://www.ondergoed.nl/)
 **Premium Underwear Retailer** A project centered on speed. I implemented performance tuning and filter enhancements to reduce bounce rates and improve the mobile shopping experience.
 * **Focus:** Conversion Rate Optimization (CRO), Speed.
 
