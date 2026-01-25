@@ -8,7 +8,7 @@ intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
-# Gaurang Padhiyar.
+# AEM, AJO, Adobe Commerce Specialist
 
 <ul class="listing-home-intro">
   <li>Freelance Adobe Commerce developer.</li>
