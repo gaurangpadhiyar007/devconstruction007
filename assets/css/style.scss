@@ -123,13 +123,30 @@ body {
     margin-top: var(--bs-gutter-y);
 }
 
-.logo-mobile img
-{
-    width: '80%';
+.logo-mobile img {
+  width: '80%';
 }
 
 @media (min-width: 1300px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
         max-width: 1349px;
     }
+}
+@media (min-width: 768px) {
+    .main-menu {
+        border: 1px solid rgb(235 138 138);
+        border-radius: 25px;
+    }
+}
+.main-menu>ul>li>a{
+  color: #467599;
+}
+.service-title a {
+  background: #467599;
+}
+.footer {
+    background: #467599;
+}
+.sub-footer {
+    background: #2d5777;
 }
