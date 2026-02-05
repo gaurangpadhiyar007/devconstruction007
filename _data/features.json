@@ -1,7 +1,7 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "BIM-Driven Feasibility",
+    "description": "We provide end-to-end site assessments, including BIM-driven structural simulations and environmental impact analysis before ground-break.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
       "width": 80,
@@ -9,8 +9,8 @@
     }
   },
   {
-    "title": "Certified Developer",
-    "description": "I'm certified developer.",
+    "title": "PEB & Residential Specialist",
+    "description": "Expertise in both high-end residential builds and industrial Pre-Engineered Buildings (PEB) for rapid, scalable infrastructure.",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
       "width": 80,
@@ -18,8 +18,8 @@
     }
   },
   {
-    "title": "Development Compliance",
-    "description": "We stay up to date on the latest changes to the website development.",
+    "title": "Zero-Harm Safety & Quality",
+    "description": "Our 'Safety-First' culture ensures accident-free sites and uncompromising quality control through rigorous multi-stage structural audits.",
     "image": {
       "url": "images/features/noun_3d modeling_1885342.svg",
       "width": 80,

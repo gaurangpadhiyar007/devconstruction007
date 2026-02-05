@@ -1,14 +1,14 @@
 baseurl: ''
 permalink: pretty
-title: 'Gaurang Padhiyar'
+title: 'Dev Construction'
 
 logo:
-  mobile: "images/logo/logo-mobile.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
+  mobile: "images/logo/logo.svg"
+  mobile_height: "50px"
+  mobile_width: "auto"
   desktop: "images/logo/logo.svg"
-  desktop_height: "56px"
-  desktop_width: "350px"
+  desktop_height: "100px"
+  desktop_width: "auto"
 
 home: 
   limit_services: 6
