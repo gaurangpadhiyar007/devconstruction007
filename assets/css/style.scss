@@ -138,6 +138,16 @@ body {
         border-radius: 25px;
     }
 }
+@media (min-width: 992px) {
+    .intro h1, .intro .h1 {
+        font-size: 40px;
+    }
+}
+.listing-home-intro
+{
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
 .main-menu>ul>li>a{
   color: #467599;
 }
