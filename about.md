@@ -39,4 +39,4 @@ Driven by a team of certified site supervisors and structural experts, Dev Const
 ---
 
 ### Ready to build your future?
-[**Get a Quote**](/contact) | [**View Our Projects**](/projects/)
+[**Get a Quote**](/contact)
