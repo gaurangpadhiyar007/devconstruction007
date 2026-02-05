@@ -123,9 +123,13 @@ body {
     margin-top: var(--bs-gutter-y);
 }
 
-.logo-mobile 
+.logo-mobile img
 {
-  img {
-    width: 80%;
-  }
+    width: '80%';
+}
+
+@media (min-width: 1300px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1349px;
+    }
 }
