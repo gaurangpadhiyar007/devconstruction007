@@ -9,6 +9,7 @@ $black: #2f2f41;
 $white: #ffffff;
 $white-offset: #fff6f8;
 $steel: #5c5a5a;
+$devColor: #467599;
 
 // Links
 $link-color: $primary;
@@ -143,19 +144,28 @@ body {
         font-size: 40px;
     }
 }
-.listing-home-intro
-{
+@media (min-width: 768px) {
+    .intro {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+.intro {
+  padding-top: 0px;
+   padding-bottom: 0px;
+}
+.listing-home-intro {
   line-height: 2rem;
   margin-bottom: 20px;
 }
-.main-menu>ul>li>a{
-  color: #467599;
+.main-menu>ul>li>a {
+  color: $devColor;
 }
 .service-title a {
-  color: #467599;
+  color: $devColor;
 }
 .footer {
-    background: #467599;
+    background: $devColor;
 }
 .sub-footer {
     background: #2d5777;
