@@ -123,11 +123,12 @@ body {
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y);
 }
-
+.logo-mobile{
+    width: 80px;
+}
 .logo-mobile img {
   width: '80%';
 }
-
 @media (min-width: 1300px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
         max-width: 1349px;
