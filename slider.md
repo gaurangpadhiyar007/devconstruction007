@@ -1,3 +1,10 @@
+---
+title: Slider
+layout: default
+description: Slider
+intro_image_absolute: false
+intro_image_hide_on_mobile: false
+---
 <section class="hero-slider-wrapper">
   <div class="hero-slider">
     <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('{{ '/assets/images/projects/madhuvan-bg.jpg' | relative_url }}');">
@@ -123,4 +130,5 @@ setInterval(autoSlide, 6000);
 function jumpToSlide(idx) {
   showHeroSlide(idx);
 }
+
 </script>
