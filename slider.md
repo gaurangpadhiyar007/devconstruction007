@@ -43,7 +43,6 @@ intro_image_hide_on_mobile: false
   <div class="slider-dots">
     <span class="dot active" onclick="jumpToSlide(0)"></span>
     <span class="dot" onclick="jumpToSlide(1)"></span>
-    <span class="dot" onclick="jumpToSlide(2)"></span>
   </div>
 </section>
 
