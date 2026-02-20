@@ -7,7 +7,7 @@ intro_image_hide_on_mobile: false
 ---
 <section class="hero-slider-wrapper">
   <div class="hero-slider">
-    <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('{{ '/assets/images/projects/madhuvan-bg.jpg' | relative_url }}');">
+    <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('{{ '/images/illustrations/home-industrial-page-construction.png' | relative_url }}');">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-lg-8">
@@ -25,7 +25,7 @@ intro_image_hide_on_mobile: false
       </div>
     </div>
 
-    <div class="hero-slide" style="background-image: url('{{ '/assets/images/projects/grandiose-banner.jpg' | relative_url }}');">
+    <div class="hero-slide" style="background-image: url('{{ '/images/illustrations/home-industrial-page-construction.png' | relative_url }}');">
       <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-end">
           <div class="col-lg-6 text-right">
