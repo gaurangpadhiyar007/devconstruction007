@@ -353,3 +353,38 @@ body {
 
 .letter-spacing-2 { letter-spacing: 2px; }
 .font-family-heading { font-family: "Playfair Display", serif; }
+
+.project-article {
+  .lead-text {
+    line-height: 1.8;
+    color: $steel;
+    font-size: 1.1rem;
+    
+    p { margin-bottom: 1.5rem; }
+  }
+
+  .feature-box {
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    height: 100%;
+
+    &:hover {
+      border-color: $primary;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    i {
+      display: block;
+      margin: 0 auto;
+    }
+
+    h5 {
+      margin-top: 1rem;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+  }
+}
