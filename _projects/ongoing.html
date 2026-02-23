@@ -1,0 +1,41 @@
+---
+layout: default
+title: "Ongoing Projects"
+---
+
+<div class="container pt-6 pb-6">
+  <div class="row mb-5">
+    <div class="col-12">
+      <h1 class="display-4 font-weight-bold">Ongoing Projects</h1>
+      <p class="lead text-muted">Developing lifestyles through innovative architecture.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    {% assign ongoing = site.projects | where: "status", "ongoing" %}
+    {% for project in ongoing %}
+    <div class="col-12 col-md-6 mb-4">
+      <div class="project-card h-100">
+        <div class="project-image-wrapper">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" loading="lazy">
+          <div class="project-overlay">
+            <a href="{{ project.url | relative_url }}" class="btn btn-outline-light">View Details</a>
+          </div>
+        </div>
+        
+        <div class="project-info p-4">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="project-category text-uppercase">{{ project.category }}</span>
+            <span class="badge badge-primary">{{ project.location }}</span>
+          </div>
+          <h3 class="font-weight-bold">{{ project.title }}</h3>
+          <p class="text-muted small">Estimated Completion: {{ project.completion_date }}</p>
+          <a href="{{ project.url | relative_url }}" class="btn-link text-primary font-weight-bold">
+            Explore Project <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
