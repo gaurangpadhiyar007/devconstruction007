@@ -42,3 +42,16 @@ accordionToggles.forEach(function(icon) {
         }
     };
 });
+
+document.querySelectorAll('.toggle-icon-mobile-menu').forEach(function(icon) {
+    icon.onclick = function(e) {
+        e.preventDefault();
+        var parentLi = icon.closest('li');
+        var submenu = parentLi.querySelector('.sidebar-submenu');
+        
+        parentLi.classList.toggle('active');
+        if (submenu) {
+            submenu.style.display = (submenu.style.display === 'none') ? 'block' : 'none';
+        }
+    };
+});

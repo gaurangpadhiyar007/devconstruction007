@@ -135,6 +135,34 @@ body {
     .main-menu ul li a { color: $black !important; }
   }
 }
+.main-menu-mobile {
+  .link-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .toggle-icon {
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+
+  li.active > .link-row .toggle-icon {
+    transform: rotate(180deg); // Arrow flips when menu is open
+  }
+
+  .sidebar-submenu {
+    background: rgba(0, 0, 0, 0.05);
+    padding-left: 15px;
+    list-style: none;
+    overflow: hidden;
+  }
+}
 
 // Desktop Menu Hierarchy
 .main-menu ul li {
