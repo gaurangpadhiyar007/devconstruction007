@@ -325,7 +325,6 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: -100px; /* Pulls image behind the transparent header */
 }
 
 .letter-spacing-2 { letter-spacing: 2px; }
@@ -357,12 +356,12 @@ body {
   &:hover { transform: translateY(-10px); }
 
   .project-visual {
-    width: 60%; // Image takes the lead
+    width: 100%; // Image takes the lead
     position: relative;
     overflow: hidden;
     
     img {
-      height: 500px;
+      // height: 500px;
       width: 100%;
       object-fit: cover; // Maintains image quality at any size
       transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -370,7 +369,7 @@ body {
   }
 
   .project-details {
-    width: 40%;
+    // width: 40%;
     z-index: 2;
   }
 
