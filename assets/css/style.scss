@@ -318,3 +318,38 @@ body {
   color: $primary;
   font-weight: 700;
 }
+
+.project-showcase-card {
+  box-shadow: 0 15px 45px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 4rem;
+
+  &:hover { transform: translateY(-10px); }
+
+  .project-visual {
+    width: 60%; // Image takes the lead
+    position: relative;
+    overflow: hidden;
+    
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover; // Maintains image quality at any size
+      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+
+  .project-details {
+    width: 40%;
+    z-index: 2;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse; // Alternating layout for better UX
+  }
+}
+
+.letter-spacing-2 { letter-spacing: 2px; }
+.font-family-heading { font-family: "Playfair Display", serif; }
