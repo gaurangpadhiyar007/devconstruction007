@@ -237,7 +237,9 @@ body {
     margin-top: var(--bs-gutter-y);
 }
 .logo-mobile{
-    width: 80px;
+    width: 104px;
+    margin-left: 110px;
+    padding: 0px;
 }
 .logo-mobile img {
   width: '80%';
@@ -256,6 +258,9 @@ body {
     .intro {
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+    .header {
+        background : #fff;
     }
 }
 @media (min-width: 1300px) {
