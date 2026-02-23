@@ -19,6 +19,9 @@ collections:
     sort_by: weight
   team:
     output: true
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 defaults:
   - scope:
@@ -31,11 +34,6 @@ defaults:
       type: "team"
     values:
       layout: "team"
-
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
 
 sass:
   style: compressed # possible values: nested expanded compact compressed
