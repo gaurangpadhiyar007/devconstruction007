@@ -1,3 +1,6 @@
+{% assign contact = site.data.contact %}
+{% assign clean_phone = contact.phone | replace: '+', '' | replace: '-', '' %}
+
 <div class="footer">
   <div class="container">
     <div class="row">
@@ -17,3 +20,12 @@
     </div>
   </div>
 </div>
+
+<a href="https://wa.me/{{ clean_phone }}?text=I'm%20interested%20in%20your%20projects" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="pulse"></span>
+</a>

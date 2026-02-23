@@ -388,3 +388,60 @@ body {
     }
   }
 }
+
+// WhatsApp Floating Button Styles
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366; // Official WhatsApp Green
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+    z-index: 2100; // Above the mobile sidebar
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #128c7e;
+        color: #FFF;
+        transform: scale(1.1);
+    }
+
+    i {
+        margin-top: 1px;
+    }
+
+    // Mobile adjustments
+    @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+}
+
+// Optional: Pulse animation to draw attention
+.pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    opacity: 0.6;
+    z-index: -1;
+    animation: whatsapp-pulse 2s infinite;
+}
+
+@keyframes whatsapp-pulse {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
