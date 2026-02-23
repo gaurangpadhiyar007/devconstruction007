@@ -2,9 +2,16 @@ main:
   - name: "Services"
     url: "/services/"
     weight: 2
-  #- name: "Projects"
-  #  url: "/projects/"
-  #  weight: 3
+  - name: Our Projects
+    url: /projects
+    weight: 3
+    sublinks:
+      - name: Ongoing
+        url: /projects/ongoing
+      - name: Completed
+        url: /projects/completed
+      - name: Upcoming
+        url: /projects/upcoming
   - name: "About"
     url: "/about/"
     weight: 4

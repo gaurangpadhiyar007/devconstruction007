@@ -1,9 +1,35 @@
 <div id="main-menu" class="main-menu">
-  {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
+  {% assign mainmenu = site.data.menus.main | sort: 'weight' %}
   <ul>
     {% for item in mainmenu %}
-    <li class="{% if item.url == page.url %}active{% endif %}">
-      <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+    <li class="{% if item.url == page.url %}active{% endif %} {% if item.sublinks %}has-dropdown{% endif %}">
+      
+      <a href="{{ item.url | relative_url }}">
+        {{ item.name }}
+        {% if item.sublinks %}<i class="fas fa-chevron-down ml-1"></i>{% endif %}
+      </a>
+
+      {% if item.sublinks %}
+      <ul class="dropdown-menu">
+        {% for subitem in item.sublinks %}
+        <li class="{% if subitem.sublinks %}has-submenu{% endif %}">
+          <a href="{{ subitem.url | relative_url }}">
+            {{ subitem.name }}
+            {% if subitem.sublinks %}<i class="fas fa-chevron-right float-right mt-1"></i>{% endif %}
+          </a>
+
+          {% if subitem.sublinks %}
+          <ul class="submenu">
+            {% for grandson in subitem.sublinks %}
+            <li><a href="{{ grandson.url | relative_url }}">{{ grandson.name }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      
     </li>
     {% endfor %}
   </ul>
