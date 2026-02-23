@@ -292,3 +292,31 @@ body {
     background: #2d5777;
 }
 
+
+
+.project-hero {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: -100px; /* Pulls image behind the transparent header */
+}
+
+.letter-spacing-2 { letter-spacing: 2px; }
+
+.project-sidebar {
+  position: sticky;
+  top: 120px; /* Stays visible as user scrolls details */
+  
+  li {
+    font-size: 0.9rem;
+    color: $black;
+  }
+}
+
+.project-category {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: $primary;
+  font-weight: 700;
+}
