@@ -9,7 +9,7 @@ layout: project-detail
 ---
 <article class="project-article">
   <div class="project-description mb-6">
-    <h2 class="display-5 font-family-heading text-primary mb-4">About Gaj Valley 2</h2>
+    <h2 class="display-5 font-family-heading text-primary mb-4">About Gaj Valley</h2>
     <div class="lead-text">
       <p>Gaj Valley 2 is a premium residential project featuring modern amenities and sustainable architecture. Nestled in the heart of Vadodara, this development offers a sanctuary of peace without compromising on urban connectivity. Each unit is meticulously designed to maximize natural light and ventilation, ensuring a living experience that is both luxurious and eco-conscious.</p>
       
