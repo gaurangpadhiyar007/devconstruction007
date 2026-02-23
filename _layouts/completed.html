@@ -21,15 +21,17 @@ title: "Completed Projects"
       {% for project in projects %}
       <div class="col-lg-12">
         <article class="project-showcase-card d-md-flex align-items-center">
-          <div class="project-visual flex-grow-1">
-            <div class="image-hover-wrapper">
-              <img src="{{ project.image | relative_url }}" alt="{{ project.title }} - {{ project.location }}" class="img-fluid main-project-img">
+          <a href="{{ project.url | relative_url }}" class="text-black">
+            <div class="project-visual flex-grow-1">
+              <div class="image-hover-wrapper">
+                <img src="{{ project.image | relative_url }}" alt="{{ project.title }} - {{ project.location }}" class="img-fluid main-project-img">
+              </div>
             </div>
-          </div>
+          </a>
 
           <div class="project-details p-lg-5 p-4 bg-white">
             <span class="text-primary font-weight-bold text-uppercase small letter-spacing-2">{{ project.category }}</span>
-            <h2 class="h1 font-family-heading mt-2">{{ project.title }}</h2>
+            <a href="{{ project.url | relative_url }}" class="text-black"><h2 class="h1 font-family-heading mt-2">{{ project.title }}</h2></a>
             <p class="text-steel mb-4">{{ project.description | truncate: 160 }}</p>
             
             <div class="d-flex gap-4 mb-4 border-top pt-4">
