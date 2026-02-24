@@ -3,20 +3,27 @@
   <ul>
     {% for item in mainmenu %}
     <li class="{% if item.url == page.url %}active{% endif %} {% if item.sublinks %}has-dropdown{% endif %}">
-      
-      <a href="{{ item.url | relative_url }}">
-        {{ item.name }}
-        {% if item.sublinks %}<i class="fas fa-chevron-down ml-1"></i>{% endif %}
-      </a>
+      {% if item.sublinks %}
+        <a href="javascript:void(0)">{{ item.name }}</a>
+        <i class="fas fa-chevron-down ml-1"></i>
+      {% else %}
+        <a href="{{ item.url | relative_url }}">
+          {{ item.name }}
+        </a>
+      {% endif %}
 
       {% if item.sublinks %}
       <ul class="dropdown-menu">
         {% for subitem in item.sublinks %}
         <li class="{% if subitem.sublinks %}has-submenu{% endif %}">
-          <a href="{{ subitem.url | relative_url }}">
-            {{ subitem.name }}
-            {% if subitem.sublinks %}<i class="fas fa-chevron-right float-right mt-1"></i>{% endif %}
-          </a>
+          {% if subitem.sublinks %}
+            <a href="javascript:void(0)">{{ subitem.name }}</a>
+            <i class="fas fa-chevron-right float-right mt-1"></i>
+          {% else %}
+            <a href="{{ subitem.url | relative_url }}">
+              {{ subitem.name }}
+            </a>
+          {% endif %}
 
           {% if subitem.sublinks %}
           <ul class="submenu">
