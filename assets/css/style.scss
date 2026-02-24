@@ -119,6 +119,7 @@ body {
 }
 // Header Transition Styles
 .header {
+  color: $devColor;
   position: relative;
   top: 0;
   width: 100%;
@@ -192,7 +193,7 @@ body {
     li {
       border-bottom: 1px solid #f0f0f0;
       list-style-type: none;
-      a { color: $black !important; padding: 12px 20px; display: block; }
+      a { color: inherit !important; padding: 12px 20px; display: block; }
     }
   }
 
