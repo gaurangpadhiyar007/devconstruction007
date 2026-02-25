@@ -112,7 +112,7 @@ layout: default
         cursor: pointer;
       }
 
-      .before-image-container .background-image-slider-button {
+      .before-image-container .background-slider-button {
         pointer-events: none;
         position: absolute;
         width: 30px;
@@ -126,8 +126,8 @@ layout: default
         align-items: center;
       }
 
-      .before-image-container .background-image-slider-button:after,
-      .before-image-container .background-image-slider-button:before {
+      .before-image-container .background-slider-button:after,
+      .before-image-container .background-slider-button:before {
         content: '';
         padding: 3px;
         display: inline-block;
@@ -135,13 +135,23 @@ layout: default
         border-width: 0 2px 2px 0;
       }
 
-      .before-image-container .background-image-slider-button:after {
+      .before-image-container .background-slider-button:after {
         transform: rotate(-45deg);
       }
 
-      .before-image-container .background-image-slider-button:before {
+      .before-image-container .background-slider-button:before {
         transform: rotate(135deg);
       }
     </style>
+
+    <script>
+      $("#background-slider").on("input change", (e)=>{
+        const sliderPos = e.target.value;
+        // Update the width of the foreground image
+        $('.foreground-img').css('width', `${sliderPos}%`)
+        // Update the position of the slider button
+        $('.background-slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+      });
+      </script>
   {% endif %}
 {% endif %}
