@@ -136,13 +136,16 @@ body {
     .main-menu ul li a { color: $black !important; }
   }
 }
+.hamburger .hamburger-inner, .hamburger .hamburger-inner::before, .hamburger .hamburger-inner::after{
+  background: #1a3d58;
+}
 #main-menu-mobile {
   position: fixed;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100vh;
-  background: #e5261f; // Brand Red
+  background: #1a3d58; // Brand Red
   z-index: 99999;      // Highest priority
   transition: left 0.4s ease;
   display: flex;
