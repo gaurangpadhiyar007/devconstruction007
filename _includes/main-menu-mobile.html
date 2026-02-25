@@ -1,15 +1,20 @@
 <div id="main-menu-mobile" class="main-menu-mobile">
+  <div class="mobile-menu-header">
+    <img src="{{ site.logo | relative_url }}" alt="Logo" class="menu-logo">
+    <button id="close-menu-internal" class="close-btn">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+
   {% assign mainmenu = site.data.menus.main | sort: 'weight' %}
-  <ul>
+  <ul class="mobile-menu-list">
     {% for item in mainmenu %}
-    <li class="{% if item.url == page.url %}active{% endif %} {% if item.sublinks %}has-sublinks{% endif %}">
-      <div class="link-row">
+    <li class="menu-item {% if item.sublinks %}has-sublinks{% endif %}">
+      <div class="link-row {% if item.sublinks %}js-toggle{% endif %}">
         {% if item.sublinks %}
-          <a href="javascript:void(0)">{{ item.name }}</a>
-          <span class="toggle-icon-mobile-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-            </svg>
+          <span class="menu-label">{{ item.name }}</span>
+          <span class="toggle-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
           </span>
         {% else %}
           <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
@@ -17,16 +22,14 @@
       </div>
 
       {% if item.sublinks %}
-      <ul class="sidebar-submenu" style="display: none;">
+      <ul class="sidebar-submenu">
         {% for subitem in item.sublinks %}
-        <li class="{% if subitem.sublinks %}has-grandchild{% endif %}">
-          <div class="link-row">
+        <li class="submenu-item {% if subitem.sublinks %}has-grandchild{% endif %}">
+          <div class="link-row {% if subitem.sublinks %}js-toggle{% endif %}">
             {% if subitem.sublinks %}
-              <a href="javascript:void(0)">{{ subitem.name }}</a>
-              <span class="toggle-icon-mobile-menu grandchild-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg>
+              <span class="menu-label">{{ subitem.name }}</span>
+              <span class="toggle-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
               </span>
             {% else %}
               <a href="{{ subitem.url | relative_url }}">{{ subitem.name }}</a>
@@ -34,7 +37,7 @@
           </div>
           
           {% if subitem.sublinks %}
-          <ul class="sidebar-submenu grandchild-menu" style="display: none;">
+          <ul class="sidebar-submenu grandchild-menu">
             {% for grandson in subitem.sublinks %}
               <li><a href="{{ grandson.url | relative_url }}">{{ grandson.name }}</a></li>
             {% endfor %}
@@ -49,7 +52,7 @@
   </ul>
   
   <div class="mobile-menu-footer">
-    <p>Phone: {{ site.data.contact.phone }}</p>
-    <p>Email: {{ site.data.contact.email }}</p>
+    <p>{{ site.data.contact.phone }}</p>
+    <p>{{ site.data.contact.email }}</p>
   </div>
 </div>

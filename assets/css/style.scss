@@ -136,33 +136,95 @@ body {
     .main-menu ul li a { color: $black !important; }
   }
 }
-.main-menu-mobile {
-  .link-row {
+#main-menu-mobile {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #e5261f; // Brand Red
+  z-index: 99999;      // Highest priority
+  transition: left 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  &.open { left: 0; }
+
+  .mobile-menu-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 20px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    .menu-logo { height: 45px; }
+    .close-btn { background: none; border: none; padding: 10px; }
   }
 
-  .toggle-icon {
-    padding: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
-  }
-
-  li.active > .link-row .toggle-icon {
-    transform: rotate(180deg); // Arrow flips when menu is open
-  }
-
-  .sidebar-submenu {
-    background: rgba(0, 0, 0, 0.05);
-    padding-left: 15px;
+  .mobile-menu-list {
     list-style: none;
-    overflow: hidden;
+    padding: 20px 0;
+    margin: 0;
+
+    .link-row {
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      color: $white;
+
+      a, .menu-label {
+        font-family: $font-family-heading; // Serif
+        font-size: 1.8rem;
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      .toggle-icon { transition: transform 0.3s ease; }
+    }
+
+    .sidebar-submenu {
+      display: none; // Toggle via JS
+      background: rgba(0,0,0,0.1);
+      padding-left: 20px;
+      list-style: none;
+      
+      .link-row a, .link-row .menu-label { font-size: 1.4rem; }
+    }
+
+    // Rotates icon when active
+    li.active > .link-row .toggle-icon { transform: rotate(180deg); }
   }
+
+  .mobile-menu-footer {
+    margin-top: auto; // Pushes footer to the bottom
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.05); // Subtle contrast
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    p {
+      color: $white;
+      margin-bottom: 5px;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    
+    .whatsapp-mini-link {
+        color: #25D366; // WhatsApp Green
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        margin-top: 10px;
+    }
+  }
+}
+
+// Hide background wrapper when menu is open
+body.lock-scroll #wrapper {
+  visibility: hidden;
+  opacity: 0;
 }
 
 // Desktop Menu Hierarchy
