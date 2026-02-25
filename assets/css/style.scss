@@ -159,9 +159,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    right: -150px;
-    position: relative;
+    // border-bottom: 1px solid rgba(255,255,255,0.1);
+    right: 0;
+    position: fixed;
+    top: 0;
     .menu-logo { height: 45px; }
     .close-btn { background: none; border: none; padding: 10px; }
   }
@@ -170,9 +171,11 @@ body {
     list-style: none;
     padding: 20px 0;
     margin: 0;
+    top: 25px;
+    position: relative;
 
     .link-row {
-      padding: 15px 30px;
+      padding: 12px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
