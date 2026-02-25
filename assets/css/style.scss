@@ -151,6 +151,12 @@ body {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  align-items: unset;
+  ul {
+    li {
+      padding: 0px;
+    }
+  }
 
   &.open { left: 0; }
 
@@ -171,13 +177,13 @@ body {
     list-style: none;
     padding: 20px 0;
     margin: 0;
-    top: 25px;
+    top: 100px;
     position: relative;
 
     .link-row {
       padding: 12px 30px;
       display: flex;
-      justify-content: space-between;
+      justify-content: start;
       align-items: center;
       cursor: pointer;
       color: $white;
