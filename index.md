@@ -16,6 +16,3 @@ show_call_box: true
   <li>Focused on strength, safety, and quality workmanship.</li>
   <li>Helping clients build with confidence.</li>
 </ul>
-
-
-{% include testimonials.html %}
