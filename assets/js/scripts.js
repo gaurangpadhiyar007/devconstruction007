@@ -22,36 +22,20 @@ window.onscroll = function() {
     }
 };
 
-// 3. Accordion Logic for Sub-links
-// Mimics the "Ongoing/Completed" nested lists
-var accordionToggles = document.querySelectorAll('.toggle-icon');
-
-accordionToggles.forEach(function(icon) {
-    icon.onclick = function(e) {
-        e.preventDefault();
-        var parentLi = icon.closest('li');
-        var submenu = parentLi.querySelector('.sidebar-submenu');
-
-        // Toggle the 'active' class to rotate the arrow and show/hide menu
-        if (parentLi.classList.contains('active')) {
-            parentLi.classList.remove('active');
-            submenu.style.display = 'none';
-        } else {
-            parentLi.classList.add('active');
-            submenu.style.display = 'block';
-        }
-    };
+document.querySelectorAll('.js-toggle').forEach(btn => {
+  btn.onclick = function(e) {
+    const parentLi = this.parentElement;
+    const submenu = parentLi.querySelector('.sidebar-submenu');
+    
+    if (submenu) {
+      e.preventDefault();
+      parentLi.classList.toggle('active');
+      submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+    }
+  };
 });
 
-document.querySelectorAll('.toggle-icon-mobile-menu').forEach(function(icon) {
-    icon.onclick = function(e) {
-        e.preventDefault();
-        var parentLi = icon.closest('li');
-        var submenu = parentLi.querySelector('.sidebar-submenu');
-        
-        parentLi.classList.toggle('active');
-        if (submenu) {
-            submenu.style.display = (submenu.style.display === 'none') ? 'block' : 'none';
-        }
-    };
-});
+// Sync close button inside menu with main hamburger
+document.getElementById('close-menu-internal').onclick = function() {
+  document.getElementById('toggle-main-menu-mobile').click();
+};
