@@ -52,20 +52,26 @@ layout: default
 {% if page.before-image %}
   {% if page.after-image %}
     <style>
-    .before-image-container {
+      /* Responsive Container */
+      .before-image-container {
         position: relative;
-        width: 900px;
-        height: 600px;
+        width: 100%; /* Spans full width of parent */
+        max-width: 900px; /* Limits size on large screens */
+        margin: 0 auto; /* Centers the slider */
+        aspect-ratio: 3 / 2; /* Maintains your 900x600 ratio automatically */
         border: 2px solid white;
+        overflow: hidden; /* Keeps images inside borders */
       }
 
+      /* Base Image Styles */
       .before-image-container .img {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-size: 900px 100%;
+        background-size: cover; /* Ensures image fills area without stretching */
+        background-position: left center;
       }
 
       .before-image-container .background-img {
@@ -74,56 +80,65 @@ layout: default
 
       .before-image-container .foreground-img {
         background-image: url('https://i.imgur.com/PfIWek4.jpg');
-        width: 50%;
+        width: 50%; /* Initial split position */
+        z-index: 1;
       }
 
+      /* The Invisible Range Input Slider */
       .before-image-container .background-image-slider {
         position: absolute;
         -webkit-appearance: none;
         appearance: none;
         width: 100%;
         height: 100%;
-        background: rgba(242, 242, 242, 0.3);
+        background: rgba(242, 242, 242, 0.1);
         outline: none;
         margin: 0;
-        transition: all 0.2s;
+        transition: background 0.2s;
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 3; /* Top layer for touch/click events */
       }
 
       .before-image-container .background-image-slider:hover {
-        background: rgba(242, 242, 242, 0.1);
+        background: rgba(242, 242, 242, 0.05);
       }
 
+      /* The Vertical White Line (Thumb) */
       .before-image-container .background-image-slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 6px;
-        height: 600px;
+        width: 4px; /* Slightly thinner for better mobile look */
+        height: 100vh; /* Ensures it covers the container height */
         background: white;
-        cursor: pointer;
+        cursor: ew-resize;
       }
 
       .before-image-container .background-image-slider::-moz-range-thumb {
-        width: 6px;
-        height: 600px;
+        width: 4px;
+        height: 100vh;
         background: white;
-        cursor: pointer;
+        cursor: ew-resize;
+        border: none;
       }
 
+      /* The Circular Button with Arrows */
       .before-image-container .background-slider-button {
         pointer-events: none;
         position: absolute;
-        width: 30px;
-        height: 30px;
+        width: 40px; /* Slightly larger for better touch targets */
+        height: 40px;
         border-radius: 50%;
         background-color: white;
-        left: calc(50% - 18px);
-        top: calc(50% - 18px);
+        left: 50%; /* Positioned by JS usually, but defaults to center */
+        top: 50%;
+        transform: translate(-50%, -50%); /* Keeps it perfectly centered */
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 2;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
       }
 
       .before-image-container .background-slider-button:after,
@@ -137,21 +152,40 @@ layout: default
 
       .before-image-container .background-slider-button:after {
         transform: rotate(-45deg);
+        margin-left: 2px;
       }
 
       .before-image-container .background-slider-button:before {
         transform: rotate(135deg);
+        margin-right: 2px;
+      }
+
+      /* Mobile Adjustments */
+      @media (max-width: 768px) {
+        .before-image-container .background-slider-button {
+          width: 34px;
+          height: 34px;
+        }
       }
     </style>
 
     <script>
-      $("#background-slider").on("input change", (e)=>{
+      const slider = document.getElementById("background-slider");
+      const foregroundImg = document.querySelector(".foreground-img");
+      const sliderButton = document.querySelector(".background-slider-button");
+
+      function updateSlider(e) {
         const sliderPos = e.target.value;
+
         // Update the width of the foreground image
-        $('.foreground-img').css('width', `${sliderPos}%`)
+        foregroundImg.style.width = sliderPos + "%";
+
         // Update the position of the slider button
-        $('.background-slider-button').css('left', `calc(${sliderPos}% - 18px)`)
-      });
+        sliderButton.style.left = `calc(${sliderPos}% - 18px)`;
+      }
+
+      slider.addEventListener("input", updateSlider);
+      slider.addEventListener("change", updateSlider);
       </script>
   {% endif %}
 {% endif %}
