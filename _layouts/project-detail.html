@@ -10,8 +10,8 @@ layout: default
     </div>
   </div>
 </section>
-{% if page.before-image %}
-  {% if page.after-image %}
+{% if page.background-image %}
+  {% if page.foreground-image %}
     <div class='before-image-container'>
       <div class='img background-img'></div>
         <div class='img foreground-img'></div>
@@ -49,8 +49,8 @@ layout: default
     </div>
   </div>
 </div>
-{% if page.before-image %}
-  {% if page.after-image %}
+{% if page.background-image %}
+  {% if page.foreground-image %}
     <style>
       /* Responsive Container */
       .before-image-container {
@@ -75,11 +75,11 @@ layout: default
       }
 
       .before-image-container .background-img {
-        background-image: url('{{ page.image | relative_url }}');
+        background-image: url('{{ page.background-image | relative_url }}');
       }
 
       .before-image-container .foreground-img {
-        background-image: url('https://i.imgur.com/PfIWek4.jpg');
+        background-image: url('{{ page.foreground-image | relative_url }}');
         width: 50%; /* Initial split position */
         z-index: 1;
       }
