@@ -1,8 +1,10 @@
 ---
 title: "Gaj Valley"
-status: "ongoing"
+status: "completed"
 category: "Residential"
 image: "/images/projects/gaj-valley-thumb.jpg"
+before-image: "/images/projects/gaj-valley-thumb.jpg"
+after-image: "/images/projects/gaj-valley-thumb.jpg"
 location: "Vadodara, Gujarat"
 completion_date: "2026"
 layout: project-detail

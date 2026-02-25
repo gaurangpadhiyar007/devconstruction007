@@ -10,6 +10,16 @@ layout: default
     </div>
   </div>
 </section>
+{% if page.before-image %}
+  {% if page.after-image %}
+    <div class='before-image-container'>
+      <div class='img background-img'></div>
+        <div class='img foreground-img'></div>
+        <input type="range" min="1" max="100" value="50" class="background-image-slider" name='background-slider' id="background-slider">
+        <div class='background-slider-button'></div>
+    </div>
+  {% endif %}
+{% endif %}
 
 <div class="container pt-5 pb-5">
   <div class="row">
@@ -39,3 +49,99 @@ layout: default
     </div>
   </div>
 </div>
+{% if page.before-image %}
+  {% if page.after-image %}
+    <style>
+    .before-image-container {
+        position: relative;
+        width: 900px;
+        height: 600px;
+        border: 2px solid white;
+      }
+
+      .before-image-container .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 900px 100%;
+      }
+
+      .before-image-container .background-img {
+        background-image: url('https://i.imgur.com/s08MkXC.jpg');
+      }
+
+      .before-image-container .foreground-img {
+        background-image: url('https://i.imgur.com/PfIWek4.jpg');
+        width: 50%;
+      }
+
+      .before-image-container .background-image-slider {
+        position: absolute;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(242, 242, 242, 0.3);
+        outline: none;
+        margin: 0;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .before-image-container .background-image-slider:hover {
+        background: rgba(242, 242, 242, 0.1);
+      }
+
+      .before-image-container .background-image-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 6px;
+        height: 600px;
+        background: white;
+        cursor: pointer;
+      }
+
+      .before-image-container .background-image-slider::-moz-range-thumb {
+        width: 6px;
+        height: 600px;
+        background: white;
+        cursor: pointer;
+      }
+
+      .before-image-container .background-image-slider-button {
+        pointer-events: none;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        left: calc(50% - 18px);
+        top: calc(50% - 18px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .before-image-container .background-image-slider-button:after,
+      .before-image-container .background-image-slider-button:before {
+        content: '';
+        padding: 3px;
+        display: inline-block;
+        border: solid #5D5D5D;
+        border-width: 0 2px 2px 0;
+      }
+
+      .before-image-container .background-image-slider-button:after {
+        transform: rotate(-45deg);
+      }
+
+      .before-image-container .background-image-slider-button:before {
+        transform: rotate(135deg);
+      }
+    </style>
+  {% endif %}
+{% endif %}
