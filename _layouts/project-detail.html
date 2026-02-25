@@ -75,7 +75,7 @@ layout: default
       }
 
       .before-image-container .background-img {
-        background-image: url('{{page.before-image}}');
+        background-image: url('{{ page.image | relative_url }}');
       }
 
       .before-image-container .foreground-img {
