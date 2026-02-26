@@ -7,7 +7,7 @@ intro_image_hide_on_mobile: false
 ---
 <section class="hero-slider-wrapper">
   <div class="hero-slider">
-    <div class="hero-slide active" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_3_gaj_greens_2.webp' | relative_url }}');">
+    <div class="hero-slide active" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-page-slider/banner_3_gaj_greens_2.webp' | relative_url }}');">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-lg-8">
@@ -24,7 +24,7 @@ intro_image_hide_on_mobile: false
       </div>
     </div>
 
-    <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_6_gaj_greens.webp' | relative_url }}');">
+    <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-page-slider/banner_6_gaj_greens.webp' | relative_url }}');">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-lg-8">
@@ -40,7 +40,7 @@ intro_image_hide_on_mobile: false
         </div>
       </div>
 
-      <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_2_gaj_valley_1.webp' | relative_url }}');">
+      <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-page-slider/banner_2_gaj_valley_1.webp' | relative_url }}');">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-lg-8">
@@ -56,7 +56,7 @@ intro_image_hide_on_mobile: false
         </div>
       </div>
 
-      <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_1_gaj_valley_2.webp' | relative_url }}');">
+      <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-page-slider/banner_1_gaj_valley_2.webp' | relative_url }}');">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-lg-8">
@@ -72,7 +72,7 @@ intro_image_hide_on_mobile: false
         </div>
       </div>
 
-      <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_12_gaj_valley_flora.webp' | relative_url }}');">
+      <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-page-slider/banner_12_gaj_valley_flora.webp' | relative_url }}');">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-lg-8">
