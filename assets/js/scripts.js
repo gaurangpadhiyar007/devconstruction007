@@ -1,3 +1,5 @@
+document.getElementById("year").textContent = new Date().getFullYear();
+
 var body = document.querySelector('body');
 var header = document.querySelector('.header'); // Ensure your header has this class
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
