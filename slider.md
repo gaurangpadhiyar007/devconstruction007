@@ -7,7 +7,7 @@ intro_image_hide_on_mobile: false
 ---
 <section class="hero-slider-wrapper">
   <div class="hero-slider">
-    <div class="hero-slide active" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/illustrations/home-industrial-page-construction.png' | relative_url }}');">
+    <div class="hero-slide active" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_3_gaj_greens_2.webp' | relative_url }}');">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-lg-8">
@@ -16,8 +16,7 @@ intro_image_hide_on_mobile: false
               <h1 class="display-3 text-white font-weight-bold">Modern Living Redefined</h1>
               <p class="lead text-white-50">Luxury residential projects designed for the global citizen.</p>
               <div class="slide-btns mt-4">
-                <a href="/about" class="btn btn-outline-light btn-lg px-5 mr-3">About Us <i class="fas fa-arrow-right ml-2"></i></a>
-                <a href="/contact" class="btn btn-primary btn-lg px-5">Get In Touch <i class="fas fa-external-link-alt ml-2"></i></a>
+                <a href="{{projects/gajvalley-2/ | relative_url}}" class="btn btn-outline-light btn-lg px-5 mr-3">About Us <i class="fas fa-arrow-right ml-2"></i></a>
               </div>
             </div>
           </div>
@@ -25,18 +24,70 @@ intro_image_hide_on_mobile: false
       </div>
     </div>
 
-    <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/illustrations/home-industrial-page-construction.png' | relative_url }}');">
+    <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_6_gaj_greens.webp' | relative_url }}');">
       <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-end">
-          <div class="col-lg-6 text-right">
-            <div class="slide-content">
-              <h1 class="display-4 font-weight-bold text-dark">LOW PRICE <br><span class="text-success">LOCKED</span></h1>
-              <p class="text-muted lead">Grandiose Essentials: Quality you can trust.</p>
-              <a href="https://www.grandiose.ae/" target="_blank" class="btn btn-warning btn-lg px-5 mt-3">SHOP NOW</a>
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-8">
+            <div class="slide-content animated fadeInUp">
+              <span class="slide-subtitle text-uppercase">Developing Lifestyle</span>
+              <h1 class="display-3 text-white font-weight-bold">Modern Living Redefined</h1>
+              <p class="lead text-white-50">Luxury residential projects designed for the global citizen.</p>
+              <div class="slide-btns mt-4">
+                <a href="{{projects/gajvalley-2/ | relative_url}}" class="btn btn-outline-light btn-lg px-5 mr-3">About Us <i class="fas fa-arrow-right ml-2"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_2_gaj_valley_1.webp' | relative_url }}');">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-8">
+            <div class="slide-content animated fadeInUp">
+              <span class="slide-subtitle text-uppercase">Developing Lifestyle</span>
+              <h1 class="display-3 text-white font-weight-bold">Modern Living Redefined</h1>
+              <p class="lead text-white-50">Luxury residential projects designed for the global citizen.</p>
+              <div class="slide-btns mt-4">
+                <a href="{{projects/gajvalley-2/ | relative_url}}" class="btn btn-outline-light btn-lg px-5 mr-3">About Us <i class="fas fa-arrow-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_1_gaj_valley_2.webp' | relative_url }}');">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-8">
+            <div class="slide-content animated fadeInUp">
+              <span class="slide-subtitle text-uppercase">Developing Lifestyle</span>
+              <h1 class="display-3 text-white font-weight-bold">Modern Living Redefined</h1>
+              <p class="lead text-white-50">Luxury residential projects designed for the global citizen.</p>
+              <div class="slide-btns mt-4">
+                <a href="{{projects/gajvalley-2/ | relative_url}}" class="btn btn-outline-light btn-lg px-5 mr-3">About Us <i class="fas fa-arrow-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slide" style="background-image: linear-gradient(rgb(65 86 85), rgb(255 255 255 / 40%)), url('{{ '/images/home-pahe-slider/banner_12_gaj_valley_flora.webp' | relative_url }}');">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-8">
+            <div class="slide-content animated fadeInUp">
+              <span class="slide-subtitle text-uppercase">Developing Lifestyle</span>
+              <h1 class="display-3 text-white font-weight-bold">Modern Living Redefined</h1>
+              <p class="lead text-white-50">Luxury residential projects designed for the global citizen.</p>
+              <div class="slide-btns mt-4">
+                <a href="{{projects/gajvalley-2/ | relative_url}}" class="btn btn-outline-light btn-lg px-5 mr-3">About Us <i class="fas fa-arrow-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
