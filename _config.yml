@@ -3,10 +3,10 @@ permalink: pretty
 title: 'Dev Construction'
 
 logo:
-  mobile: "images/logo/logo.svg"
+  mobile: "images/logo/logo-yellow-trasnparent.png"
   mobile_height: "50px"
   mobile_width: "auto"
-  desktop: "images/logo/logo.svg"
+  desktop: "images/logo/logo-yellow-trasnparent.png"
   desktop_height: "100px"
   desktop_width: "auto"
 
