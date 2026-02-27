@@ -5,7 +5,7 @@ description: Slider
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
 ---
-<section class="hero-slider-wrapper">
+<!-- <section class="hero-slider-wrapper">
   <div class="hero-slider">
     
     <div class="hero-slide active" style="background-image: url('{{ '/images/home-page-slider/banner_3_gaj_greens_2.webp' | relative_url }}');">
@@ -89,6 +89,46 @@ intro_image_hide_on_mobile: false
     <span class="dot" onclick="jumpToSlide(2)"></span>
     <span class="dot" onclick="jumpToSlide(3)"></span>
     <span class="dot" onclick="jumpToSlide(4)"></span>
+  </div>
+</section> -->
+
+<section class="hero-slider-wrapper">
+  <div class="hero-slider">
+    {% for slide in site.data.slider %}
+    <div class="hero-slide {% if forloop.first %}active{% endif %}" 
+         style="background-image: url('{{ slide.image | relative_url }}');">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-8">
+            <div class="slide-content animated fadeInUp">
+              <span class="slide-subtitle text-uppercase">{{ slide.subtitle }}</span>
+              
+              {% if forloop.first %}
+                <h1 class="display-3 text-white font-weight-bold">{{ slide.title }}</h1>
+              {% else %}
+                <h2 class="display-3 text-white font-weight-bold">{{ slide.title }}</h2>
+              {% endif %}
+              
+              <p class="lead text-white-50">{{ slide.description }}</p>
+              
+              <div class="slide-btns mt-4">
+                <a href="{{ slide.link | relative_url }}" class="btn btn-outline-light btn-lg px-5 mr-3">
+                  {{ slide.button_text }} <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="slider-dots">
+    {% for slide in site.data.slider %}
+    <span class="dot {% if forloop.first %}active{% endif %}" 
+          onclick="jumpToSlide({{ forloop.index0 }})"></span>
+    {% endfor %}
   </div>
 </section>
 
