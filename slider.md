@@ -211,6 +211,15 @@ a.btn.btn-outline-light.btn-lg.px-5.mr-3:hover {
     }
   }
 }
+@media (max-width: 768px) {
+ .header{
+  position: relative;
+  background: #fff;
+ }
+ .hamburger .hamburger-inner, .hamburger .hamburger-inner::before, .hamburger .hamburger-inner::after{
+  background: #000000;
+ }
+}
 </style>
 <script>
   let currentHeroIndex = 0;
