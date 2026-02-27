@@ -79,7 +79,7 @@ layout: project-detail
   <div class="row">
     <div class="col-md-6">
       <ul class="list-unstyled custom-detail-list">
-        <li><strong>Project Status:</strong> <span class="badge badge-success">Ongoing</span></li>
+        <li><strong>Project Status:</strong> <span class="badge badge-success">Completed</span></li>
         <li><strong>Location:</strong> Vadodara, Gujarat</li>
         <li><strong>Project Type:</strong> Residential High-Rise</li>
       </ul>
@@ -87,7 +87,7 @@ layout: project-detail
     <div class="col-md-6">
       <ul class="list-unstyled custom-detail-list">
         <li><strong>Total Units:</strong> 120+ Luxury Apartments</li>
-        <li><strong>Completion:</strong> Estimated Dec 2026</li>
+        <li><strong>Completion:</strong> Dec 2025</li>
       </ul>
     </div>
   </div>
