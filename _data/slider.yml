@@ -18,3 +18,17 @@
   image: "/images/home-page-slider/banner_2_gaj_valley_1.webp"
   link: "/projects/gajvalley-2/"
   button_text: "About Us"
+
+- subtitle: "Developing Lifestyle"
+  title: "Modern Living Redefined"
+  description: "Luxury residential projects designed for the global citizen."
+  image: "/images/home-page-slider/banner_12_gaj_valley_flora.webp"
+  link: "/projects/gajvalley-2/"
+  button_text: "About Us"
+
+- subtitle: "Developing Lifestyle"
+  title: "Modern Living Redefined"
+  description: "Luxury residential projects designed for the global citizen."
+  image: "/images/home-page-slider/banner_1_gaj_valley_2.webp"
+  link: "/projects/gajvalley-2/"
+  button_text: "About Us"

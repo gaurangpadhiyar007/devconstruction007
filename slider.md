@@ -148,6 +148,21 @@ intro_image_hide_on_mobile: false
   overflow: hidden;
 }
 
+.slide-btns {
+    width: 200px;
+    border: 1px solid yellow;
+    padding: 10px;
+    color: black !important;
+}
+a.btn.btn-outline-light.btn-lg.px-5.mr-3 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+a.btn.btn-outline-light.btn-lg.px-5.mr-3:hover {
+    text-decoration: none;
+}
+
 .hero-slide {
   position: absolute;
   top: 0; left: 0;
