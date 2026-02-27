@@ -1,10 +1,10 @@
 ---
 title: Slider
 layout: default
+bodyClass: "page-home"
 description: Slider
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
-bodyClass: "page-home"
 ---
 
 <section class="hero-slider-wrapper">
