@@ -339,6 +339,19 @@ body.lock-scroll #wrapper {
   }
 }
 
+.strip {
+  background: #28384a;
+  margin-top: 20px;
+  box-shadow: inset 0px -9px 17px #ffefef;
+  a {
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+    font-size: 12px;
+  }
+}
 .listing-home-intro {
     max-width: 100%;
     padding-right: calc(var(--bs-gutter-x) * .5);
@@ -391,9 +404,7 @@ body.lock-scroll #wrapper {
 .main-menu>ul>li>a {
   color: $devColor;
 }
-.service-title a {
-  color: $devColor;
-}
+
 .footer {
     background: $devColor;
 }
