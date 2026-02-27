@@ -129,7 +129,7 @@ body {
   padding: 20px 0;
 
   &.scrolled {
-    background: $white; // Solid white on scroll
+    background: $white !important; // Solid white on scroll
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 10px 0;
     

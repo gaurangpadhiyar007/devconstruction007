@@ -50,6 +50,7 @@ intro_image_hide_on_mobile: false
   .page-home .header{
     position: fixed !important;
     background: transparent !important;
+    border-bottom: none;
   }
   .page-home .main-menu>ul>li>a{
     color: white !important;
